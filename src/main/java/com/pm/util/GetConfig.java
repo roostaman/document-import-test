@@ -9,7 +9,7 @@ import java.util.Properties;
 public class GetConfig {
 
     private static final Properties properties = new Properties();
-    private static final String ENV_PROPS_PATH = GetConfig.get("ENV_PROPS_PATH");
+    private static final String ENV_PROPS_PATH = "src/main/resources/env.properties";
 
     static  {
         try (InputStream inputStream = Files.newInputStream(Path.of(ENV_PROPS_PATH))) {
